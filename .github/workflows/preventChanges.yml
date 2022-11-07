@@ -11,4 +11,4 @@ jobs:
       with: 
         githubToken: ${{ secrets.GH_TOKEN }}
         pattern: .github/workflows/preventChanges.yml
-        trustedAuthors: SvenOleLuxMD, ME
+        trustedAuthors: SvenOleLuxMD
