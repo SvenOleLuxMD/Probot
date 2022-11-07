@@ -12,3 +12,10 @@ jobs:
         githubToken: ${{ secrets.GH_TOKEN }}
         pattern: .github/workflows/preventChanges.yml
         trustedAuthors: SvenOleLuxMD
+    - name: Prevent file change probotSettings
+      uses: xalvarez/prevent-file-change-action@v1.3.1 
+      with: 
+        githubToken: ${{ secrets.GH_TOKEN }}
+        pattern: .github/settings.yml
+        trustedAuthors: SvenOleLuxMD
+
