@@ -1,5 +1,11 @@
-name: Prevent file change   
-uses: xalvarez/prevent-file-change-action@v1.3.1 
-  with:
-    pattern: preventChanges.yml
-    trustedAuthors: SvenOleLuxMD
+on: [push]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Prevent file change   
+      uses: xalvarez/prevent-file-change-action@v1.3.1 
+      with: 
+        pattern: preventChanges.yml
+        trustedAuthors: SvenOleLuxMD
