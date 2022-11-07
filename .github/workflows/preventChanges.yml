@@ -7,5 +7,5 @@ jobs:
     - name: Prevent file change   
       uses: xalvarez/prevent-file-change-action@v1.3.1 
       with: 
-        pattern: preventChanges.yml
+        pattern: .github/workflows/preventChanges.yml
         trustedAuthors: SvenOleLuxMD
